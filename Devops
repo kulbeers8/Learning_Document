@@ -204,3 +204,15 @@ If we want to change the name of the git reposittory then we use
 git branch -m oldbranchname newbranchname
 
 file that are mentioned in .gitignore file it will never go to git hub  
+
+Restore:
+Restore deleted file only that are in track order
+
+git restore --stages nameoffile
+
+
+MERGE:
+
+Adding the file between one branch to another branch
+
+
