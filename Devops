@@ -1,0 +1,206 @@
+Introduction of Complete Devops :
+
+
+Software Architechre
+
+1. one tier
+2. two tier
+3. three tier
+4 N- tier
+
+Note : tier means server. Server is used to serves services to end user's
+
+In real time we use only three server in real life
+
+1 Web server : it is use to show frontend of the application : It use presentation layer . Prgogramming lang: HTML, CSS, JS
+2. app server : it is also called logic layer. it is use to add logic code Programing lang: C++ , java, .net , php
+3 db servder : it is use db layr. It is use to store and retrieve data from database : Prgmming layer: MYsql ,postgresql, monggodb
+
+One Tier application : Standalone application , it is run on local machine , no internet connection requires . Ex: VLC media player
+
+Two Tier application : Client Server application. This application work on local system. it require internet connection Ex; Banking application
+
+Three Tier application : Web application (Real time) . Everything run with internet whtupps , youtube
+
+
+Create a webServer on AWS Machine :
+ 
+  Create a Webserver and show the live ENv
+
+Server : Servers the service to end user
+
+Web Server : to show the application 
+
+application server : Logic 
+
+db server : database layer
+
+
+
+How to Create web server :
+
+To Create server we need to cloud plateform and cloud account
+
+AWS Cloud : EC2 Instances Elastic compute cloud
+
+There are 7 steps to create EC2 Elastic compute 
+
+Server = computer
+
+What is operating system : we use to interact with electronic device we use operating system
+
+1. TAGS = Name (Giveing name of the server which type of server)
+
+2. AMI(Amazon machine image) = OS (Operating system means to communication with computer). Always use latest image
+
+3. Instance_Type = CPU + RAM (Processor and ram)
+
+4.  Key_Pair = Login (keypair to login machine or login to server) Private key is user to login server (public key = (it manage aws) and private key(user))
+
+5. Network = VPC(virtual private cloud) We can create own network. SECURITY GROUPS (when application run on specific port numbers 0 - 65535)
+
+6. Storage = 8 GB (ROM) and maximum 16 TB
+
+7. Summary = To Review (All the details that u set)
+
+
+SSH -Secure shell port number 22 . when to comnucate with servers the ssh use
+All Traffic means use port 0 to 65535
+
+
+
+Operating system: Use to Comunicate with Server or system 
+
+THree type of operating system
+
+1. Linux , Windows and Mac
+
+Why to Use Linux
+
+Linux have to lot of advanteage. 
+
+1. it is free and open source
+2. No need to install antivirus
+3. It is not hang : Performance is to Good
+4. Multi user based . with in time multiple user can work at a same time through ssh to take access on it
+5. Multi tasking (On a single time it can play many things like playing game, videos)
+
+From 100 96% server is running on linux . As a devops engineer we work on server so need to learn liunux
+
+MOdes
+
+Two type of modes 
+
+GUI : Graphical user interface 
+CLI : Command line interface
+
+
+In AWS every time we work with sudo user on AWS.
+To switch from ec2-suer to root we use 'sudo -i'
+it is also use in smart phone, super computer, smart watch
+
+How to check CPU and memory information
+
+1. top
+2. cat /proc/cpuinfo
+3. free -m
+4. lscpu
+
+To see the memory
+1. cat /proc/cpuinfo
+2. lsmem
+3. free -m 
+
+Git is written in C programming is is developed in 2005
+Git is open source and free.
+Git and linux is invented by Linux Tornwell. It will maintain multiple version of same files. Git is developed in 2005 
+
+History of GIT
+SCCM 1972 is track only one file 
+RCS it track multiple file but not directory
+
+Main diffrenece between SVN and GIT is that GIt source code is store on multiple plcaes. SVN source store only on one place. SVN is centerlized and GIt is distributed 
+
+
+Git Archetecture
+
+Git mainly have three stages
+
+1 Working DIrectory: Where we write source code
+
+2. Staging Area : Track files 
+
+3. Repository : Here we store track records
+
+Git 
+
+To configure git user and config
+
+git --config user.email kulbeers@vehant.com
+git --config user.name kulbeers
+
+git init : when this command is run it create .git which is to initalize git local repository
+
+git add . : To add file's in tracking and staging area
+
+git commit -m "learning" : to store in repository
+
+To show commit 
+
+git log  or if we want to show last git log -2
+
+git show is use to show particular commit id commit what files
+
+
+To create a branch in git repository 
+
+git branch name_of_branch
+
+To switch one branch to another branch
+
+git checkout branch_name
+
+Checkout is used to switch from one branch to another branch
+
+Default branch is master in git .
+
+Note: When we done an inital commit then only default branch is create . If we not commit a file not create a branch. Default branch is master 
+When we change from one branch to another branch it carry files
+
+
+Now push code to github
+
+1. Create repo on github
+
+2. After create a repo on github. To connect local repo with github repo we use
+
+git remote add origin https://github.com/kulbeers8/Learning_Document.git
+
+PUSH : Local to remote repo
+local repo is .git and remote repo is Learning_Document.git
+PULL : remote to local
+
+After 2021 Git have introduce token option instead of password to push code on github 
+
+
+Token Generation
+
+<First Go to account -> Setting -> Developer account -> PAT(Personal access token classic) -> Generate New token 
+
+Token 
+
+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
+
+git push origin nameofbranch
+
+username of github: 
+
+password of github: but here we use token
+
+if we want to ignore some of the files then we add these file name in .gitignore file
+
+If we want to change the name of the git reposittory then we use
+
+git branch -m oldbranchname newbranchname
+
+file that are mentioned in .gitignore file it will never go to git hub  

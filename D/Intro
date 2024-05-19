@@ -1,0 +1,34 @@
+Docker is a powerful tool used for developing, packaging, and deploying applications efficiently. Docker is a container management service. Docker was released in 2013. It is open-source and available for different platforms like Windows, macOS, and Linux. Docker is quickly shipping, testing, and deploying code. So that it reduces your delay between writing code and running it in production. You can create self-contained environments known as containers. That can run consistently on different platforms.
+You need to install the Docker engine on your computer or device. The Docker engine allows you to create and manage docker containers, docker images, docker hub, docker desktop, etc.
+You don’t need to allocate any memory for the application. It can automatically generate space according to the requirements.
+
+What is a Dockerfile?
+The Dockerfile uses DSL (Domain Specific Language) and contains instructions for generating a Docker image. Dockerfile will define the processes to quickly produce an image. While creating your application, you should create a Dockerfile in order since the Docker daemon runs all of the instructions from top to bottom.
+
+Dockerfile is the source code of the image
+
+Docker Commands
+There are “n” no.of commands in docker following are some of the commands mostly used.
+
+Docker Run
+Docker Pull
+Docker PS
+Docker Stop
+Docker Start
+Docker rm
+Docker RMI
+Docker Images
+Docker exec
+Docker Login
+
+
+
+#############################################################
+
+to pull image from docker hub
+
+docker pull ubuntu
+
+docker-compose is use to run multiple containe on single time. Docker-compose is a service which is use to run multiple container with single command. With the help of docker-compose we help to run complete app 
+
+
